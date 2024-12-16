@@ -42,7 +42,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const PrimaryButton: Story = {
-  name: "Button",
+  name: "Button1",
   args: {
     buttonProps: {
       variant: "contained",
