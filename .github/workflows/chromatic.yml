@@ -4,24 +4,22 @@ on:
   pull_request: # Triggers on pull request events
     branches:
       - master
-  push: # Optionally trigger on push to specific branches
-    branches:
-      - master
 
 jobs:
   chromatic-deployment:
-    name: Chromatic Deployment
+    # Operating System
     runs-on: ubuntu-latest
+    # Job steps
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - name: Install Dependencies
+      - uses: actions/checkout@v1
+      - name: Install dependencies
         run: npm install
+        # 👇 Adds Chromatic as a step in the workflow
       - name: Publish to Chromatic
-        uses: chromaui/action@latest
-        # Options required for Chromatic's GitHub Action
+        uses: chromaui/action@v1
+        # Chromatic GitHub Action options
         with:
-          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           token: ${{ secrets.GITHUB_TOKEN }}
+          # 👇 Chromatic projectToken, refer to the manage page to obtain it.
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          exitZeroOnChanges: true # 👈 Option to prevent t
