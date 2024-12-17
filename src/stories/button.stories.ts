@@ -61,6 +61,6 @@ export const OutlinedButton: Story = {
       color: "primary",
       size: "large",
     },
-    children: "Test button",
+    children: "Test button1",
   },
 };
