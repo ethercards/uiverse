@@ -1,9 +1,7 @@
 name: Chromatic
 
-on:
-  pull_request: # Triggers on pull request events
-    branches:
-      - master
+# Event for the workflow
+on: push
 
 jobs:
   chromatic-deployment:
