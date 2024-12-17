@@ -29,3 +29,4 @@ ignore-index.ts
 index.tsx
 *storybook.log
 storybook.log
+storybook-static
