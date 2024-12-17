@@ -1,20 +1,24 @@
-name: Deploy to Chromatic
+name: Chromatic
 
 on:
-  pull_request:
+  pull_request: # Triggers on pull request events
     branches:
-      - master
+      - main
+  push: # Optionally trigger on push to specific branches
+    branches:
+      - main
 
 jobs:
   chromatic-deployment:
+    name: Chromatic Deployment
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v1
-      - name: Install dependencies
-        run: yarn
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Install Dependencies
+        run: npm install
+
       - name: Publish to Chromatic
-        uses: chromaui/action@v1
-        # Options required for Chromatic's GitHub Action
-        with:
-          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+        run: npx chromatic --project-token=${{ secrets.CHROMATIC_PROJECT_TOKEN }} --exit-once-uploaded
