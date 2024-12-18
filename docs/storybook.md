@@ -113,7 +113,9 @@ In this example, a custom Preview decorator is used to wrap all stories with add
 
 To use Storybook locally, run the following command in your project:
 
-`npm run storybook`
+```bash
+npm run storybook
+```
 
 This will start a local server where you can access the Storybook UI. Here, you can test how your components look and behave, and adjust their arguments dynamically to see the impact of different states or properties.
 
@@ -125,7 +127,9 @@ This will start a local server where you can access the Storybook UI. Here, you 
 
 To build your Storybook for production, run the following command:
 
-`npm run build-storybook`
+```bash
+npm run build-storybook
+```
 
 This will generate a static version of your Storybook in the `storybook-static` directory, which you can then deploy to any static hosting service.
 
@@ -133,14 +137,16 @@ This will generate a static version of your Storybook in the `storybook-static` 
 
 Ensure your Storybook instance is properly configured and running. Chromatic works with the stories you define in your Storybook setup. Follow these best practices:
 
-Use well-structured stories to represent all visual states of your components.
-Include a wide range of argTypes and props for thorough testing.
+- Use well-structured stories to represent all visual states of your components.
+- Include a wide range of argTypes and props for thorough testing.
 
 ## Publish Your Storybook to Chromatic
 
 To publish your Storybook for Chromatic, run the script you added earlier:
 
-`npm run chromatic`
+```bash
+npm run chromatic
+```
 
 This command:
 
@@ -153,8 +159,8 @@ This command:
 
 Chromatic automatically compares the latest snapshots of your stories against previous ones to detect visual changes. This helps you:
 
-Catch unexpected visual regressions.
-Approve or reject changes through the Chromatic UI.
+- Catch unexpected visual regressions.
+- Approve or reject changes through the Chromatic UI.
 
 ## References
 
