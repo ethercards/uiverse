@@ -8,6 +8,7 @@
   - [Table of Contents](#table-of-contents)
   - [Developer Guide: Creating Storybook Examples](#developer-guide-creating-storybook-examples)
   - [Designer Guide: Reviewing Builds on Chromatic](#designer-guide-reviewing-builds-on-chromatic)
+  - [Connecting Figma with Chromatic](#connecting-figma-with-chromatic)
 
 ## Developer Guide: Creating Storybook Examples
 
@@ -86,3 +87,17 @@ When a developer has created a build for the current branch and uploaded it to C
 7. **Follow Up**: If changes are requested, the developer will make the necessary updates and upload a new build to Chromatic. Repeat the review process for the new build.
 
 By following this process, designers can ensure that the components meet the design requirements and provide a seamless user experience before they are merged into the main codebase.
+
+## Connecting Figma with Chromatic
+
+To connect Figma with Chromatic, follow these steps:
+
+1. **Install the Figma Plugin**: Install the Chromatic Figma plugin from the Figma community.
+
+2. **Link Your Figma Account**: Open the plugin and link your Figma account with Chromatic by following the on-screen instructions.
+
+3. **Select Figma Frames**: Choose the Figma frames that you want to connect with Chromatic. These frames will be used to generate visual snapshots.
+
+4. **Upload to Chromatic**: Use the plugin to upload the selected frames to Chromatic. This will create visual snapshots that can be reviewed alongside your Storybook components.
+
+By connecting Figma with Chromatic, you can ensure that your design and development workflows are aligned and that visual changes are tracked effectively.

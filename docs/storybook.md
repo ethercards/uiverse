@@ -167,3 +167,4 @@ Chromatic automatically compares the latest snapshots of your stories against pr
 - [Storybook and Figma](https://help.figma.com/hc/en-us/articles/360045003494-Storybook-and-Figma)
 - [Figma Plugin for Storybook](https://storybook.js.org/blog/figma-plugin-for-storybook/)
 - [How to Integrate Figma Design Systems with Storybook](https://www.youtube.com/watch?v=O3afqyCS2-o&ab_channel=newline)
+- [Design Integrations](https://storybook.js.org/docs/sharing/design-integrations)
